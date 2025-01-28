@@ -1,0 +1,3 @@
+#! /usr/bin/env bash
+# Generate a 64 character id for use in leaktk
+openssl rand 256 | sha256sum | cut -d ' ' -f 1 | tr -d '\n'
